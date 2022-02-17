@@ -6,16 +6,16 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import services.DictionaryServiceImpl;
+import services.DictionaryService;
 
 import java.util.List;
 
 @Controller
 public class DictionaryController {
-    private DictionaryServiceImpl dictionaryService = new DictionaryServiceImpl();
+    private DictionaryService dictionaryService = new DictionaryService();
 
-    @GetMapping("/search")
-    public String search() {
+    @GetMapping("/index")
+    public String index() {
         return "index";
     }
 

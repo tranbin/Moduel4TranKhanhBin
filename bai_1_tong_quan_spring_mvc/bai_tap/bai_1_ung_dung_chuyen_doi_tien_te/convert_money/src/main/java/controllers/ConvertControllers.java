@@ -14,9 +14,9 @@ public class ConvertControllers {
     }
 
     @PostMapping("/converted")
-    public String submit(@RequestParam String usd,String rate, Model model) {
+    public String submit(@RequestParam String usd,@RequestParam String rate, Model model) {
         float result = Float.parseFloat(usd)*Float.parseFloat(rate);
-        model.addAttribute("result1", result);
+        model.addAttribute("result", result);
         return "index";
     }
 }
