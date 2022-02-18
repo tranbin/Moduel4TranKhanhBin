@@ -14,8 +14,8 @@ public class CaculatorController {
     }
 
     @PostMapping("/caculator")
-    public String calculate(@RequestParam(name = "choose1", defaultValue = "0") double choose1,
-                            @RequestParam(name = "choose2", defaultValue = "0") double choose2,
+    public String calculate(@RequestParam(name = "choose1") double choose1,
+                            @RequestParam(name = "choose2") double choose2,
                             @RequestParam(name = "div", defaultValue = "") String calcul,
                             ModelMap model) {
 
