@@ -36,7 +36,7 @@
     <label>Singature</label>
     <form:textarea path="signature"/></br>
     <input type="submit" value="Update">
-    <input type="submit" value="Cancel">
+    <input type="reset" value="Cancel">
 </form:form>
 </body>
 </html>

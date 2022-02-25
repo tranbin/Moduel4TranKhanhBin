@@ -39,7 +39,12 @@ public class ProductServiceImpl implements IProductService {
 
     @Override
     public Product findByName(String name) {
-        return products.get(name);
+        for (int i = 1 ; i <= products.size();i++){
+            if (products.get(i).getName().equalsIgnoreCase(name)){
+                return products.get(i);
+            }
+        }
+        return null;
     }
 
     @Override

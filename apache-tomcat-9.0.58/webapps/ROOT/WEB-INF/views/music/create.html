@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Music</title>
+</head>
+<body>
+<h1>Create music</h1>
+<p>
+    <a href="/musics">Music list</a>
+</p>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<form th:action="@{/create-music}" th:object="${music}" method="post">
+    <table>
+        <tr>
+            <td>Id:</td>
+            <td><input type="text" th:field="${music.id}"/></td>
+        </tr>
+        <tr>
+            <td>Name Song:</td>
+            <td><input type="text" th:field="${music.name}"/></td>
+        </tr>
+        <tr>
+            <td>Singer Name:</td>
+            <td><input type="text" th:field="${music.nameSinger}"/></td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td><input type="text" th:field="${music.category}"/></td>
+        </tr>
+        <tr>
+            <td>File Up:</td>
+            <td><input type="text" th:field="${music.fileUp}"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Create Music"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
