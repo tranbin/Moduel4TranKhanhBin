@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8743533f-fdf9-48a8-9c1b-56457d604295" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/com/codegym/cms/controller/CustomerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/com/codegym/cms/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/com/codegym/cms/repository/CustomerRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/com/codegym/cms/repository/ICustomerRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/com/codegym/cms/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/com/codegym/cms/service/ICustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/aspectjrt-1.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/byte-buddy-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/classmate-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/groovy-2.5.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/groovy-extensions-0.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/hibernate-commons-annotations-5.0.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/hibernate-core-5.3.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/jandex-2.0.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/javassist-3.22.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/ognl-3.1.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/protobuf-java-3.11.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/slf4j-api-1.7.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-core-5.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-jcl-5.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/thymeleaf-3.0.11.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/thymeleaf-expression-processor-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/thymeleaf-layout-dialect-2.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/thymeleaf-spring5-3.0.11.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/views/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/main/java/com/codegym/customer_managerment/CustomerManagermentApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/main/java/com/codegym/customer_managerment/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/main/java/com/codegym/customer_managerment/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/main/java/com/codegym/customer_managerment/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/main/java/com/codegym/customer_managerment/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/main/java/com/codegym/customer_managerment/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/main/java/com/codegym/customer_managerment/service/impl/CustomerServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo_spring_boot_customer_managerment/src/test/java/com/codegym/customer_managerment/CustomerManagermentApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/repository/IGeneralRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/java/com/codegym/cms/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/webapp/WEB-INF/views/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/webapp/WEB-INF/views/customer/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/webapp/WEB-INF/views/customer/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/webapp/WEB-INF/views/customer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/src/main/java/com/codegym/cms/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/src/main/java/com/codegym/cms/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/src/main/java/com/codegym/cms/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/src/main/java/com/codegym/cms/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/src/main/java/com/codegym/cms/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/src/main/java/com/codegym/cms/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/src/main/java/com/codegym/cms/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/src/main/java/com/codegym/cms/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-management-stored-procedure/src/main/webapp/WEB-INF/views/customer/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/music/ApplicationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/music/ApplicationInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/music/controller/MusicController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/music/model/Music.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/music/repository/MusicRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/music/repository/Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/music/repository/impl/MusicRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/music/service/MusicService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/classes/music/service/impl/MusicServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/aspectjrt-1.8.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/attoparser-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/byte-buddy-1.9.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/hibernate-core-5.4.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-aop-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-beans-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-context-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-core-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-data-commons-1.13.12.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-data-jpa-1.11.12.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-expression-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-jdbc-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-orm-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-tx-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-web-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/spring-webmvc-4.3.17.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/thymeleaf-3.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/thymeleaf-spring4-3.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/lib/unbescape-1.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/views/music/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/views/music/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/views/music/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/WEB-INF/views/music/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.58/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bai_1_tong_quan_spring_mvc/thuc_hanh/ung_dung_quan_li_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bai_1_tong_quan_spring_mvc/thuc_hanh/ung_dung_quan_li_khach_hang/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bai_2_spring_controller/thuc_hanh/bai_5_ung_dung_quan_li_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bai_2_spring_controller/thuc_hanh/bai_5_ung_dung_quan_li_khach_hang/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bai_5_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bai_5_orm/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_quan_li_khach_hang_jpa/customer-management/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="25hN2w9935lDuoV339Pxr4Rz7Aj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../bai_tap" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8743533f-fdf9-48a8-9c1b-56457d604295" name="Default Changelist" comment="" />
+      <created>1645975154675</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645975154675</updated>
+      <workItem from="1645975160126" duration="1471000" />
+      <workItem from="1645976792861" duration="245000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="360" y="71" key="#Project_Structure" timestamp="1645976907797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1645976907797" />
+    <state x="360" y="71" key="#Tomcat_Server" timestamp="1645976899487">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="71" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1645976899487" />
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645976933202">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1645976933202" />
+    <state x="360" y="71" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1645976904088">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="71" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.824@0.0.1536.824" timestamp="1645976904088" />
+    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1645977022657">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645977022657" />
+    <state x="465" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1645976794741">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1645976794741" />
+    <state x="209" y="115" key="new project wizard" timestamp="1645977035933">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="115" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1645977035933" />
+  </component>
+</project>
