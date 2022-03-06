@@ -14,7 +14,7 @@ public interface CustomerRepository extends JpaRepository<Customer,Integer> {
     Page<Customer> findAll(Pageable pageable);
 
 /*    List<Customer> findAllByNameContaining(String name);*/
-    //Query
+        //Query
     // native = true - sql - native
     // = false - hql - jpql
     @Query(value = "select * from customer where firstName like %?%",nativeQuery = true)

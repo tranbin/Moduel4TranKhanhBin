@@ -1,28 +1,46 @@
 package blog_managerment.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Blog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String author ;
-    private String date ;
-    private String description ;
+    private String name;
+    @Column(columnDefinition = "text")
+    private String content;
+    private String dateCreate;
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getDateCreate() {
+        return dateCreate;
+    }
+
+    public void setDateCreate(String dateCreate) {
+        this.dateCreate = dateCreate;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
+    private Category category;
 
     public Blog() {
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
     }
 
     public int getId() {
@@ -33,19 +51,11 @@ public class Blog {
         this.id = id;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getName() {
+        return name;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    public void setName(String name) {
+        this.name = name;
     }
 }

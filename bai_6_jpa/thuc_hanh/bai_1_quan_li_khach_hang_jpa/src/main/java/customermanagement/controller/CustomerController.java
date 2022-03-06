@@ -1,7 +1,6 @@
 package customermanagement.controller;
 
 import customermanagement.model.Customer;
-import customermanagement.service.CustomerService;
 import customermanagement.service.impl.CustomerServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -18,7 +18,7 @@ public class ProvinceController {
     @Autowired
     ProvinceServiceImpl provinceService;
 
-    @GetMapping("")
+    @GetMapping("/province")
     public ModelAndView getIndex() {
         return new ModelAndView("list", "provinces", provinceService.findAll());
     }

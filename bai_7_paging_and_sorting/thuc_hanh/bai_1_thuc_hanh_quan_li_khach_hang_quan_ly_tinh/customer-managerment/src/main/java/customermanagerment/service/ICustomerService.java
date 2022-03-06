@@ -9,5 +9,7 @@ public interface ICustomerService {
     List<Customer> findAll();
     void saveCustomer(Customer customer);
     void deleteCustomer(Long id);
-    Province findCustomerById(Long id);
+    Customer findCustomerById(Long id);
+
+    List<Customer> findByName(String name);
 }
