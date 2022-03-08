@@ -28,7 +28,7 @@ public class MusicController {
     }
 
     @PostMapping("/create-music")
-    public ModelAndView saveMusic(@Validated @ModelAttribute("music") Music music, BindingResult bindingResult) {
+    public ModelAndView saveMusic(@Validated @ModelAttribute(name = "music") Music music, BindingResult bindingResult) {
         if (bindingResult.hasFieldErrors()) {
             return new ModelAndView("create");
         } else {

@@ -14,6 +14,7 @@ public interface IBlogService {
 
     Page<Blog> findAll(Pageable pageable);
     List<Blog> findAllBlogById(int id);
+    Page<Blog> findAllBlogById(int id,Pageable pageable);
 
     Page<Blog> findByContent(String content,Pageable pageable);
 }

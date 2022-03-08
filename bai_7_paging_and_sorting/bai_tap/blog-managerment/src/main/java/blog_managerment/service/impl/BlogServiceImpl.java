@@ -44,6 +44,11 @@ public class BlogServiceImpl implements IBlogService {
     }
 
     @Override
+    public Page<Blog> findAllBlogById(int id, Pageable pageable) {
+        return blogRepository.findAllBlogById(id, pageable);
+    }
+
+    @Override
     public Page<Blog> findByContent(String content,Pageable pageable) {
         return blogRepository.findByContent(content, pageable);
     }

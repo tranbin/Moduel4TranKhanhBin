@@ -17,10 +17,6 @@
 <form th:action="@{/create-blog}" th:object="${blog}" method="post" class="text-center">
     <table>
         <tr>
-            <td>Id:</td>
-            <td><input type="text" th:field="${blog.id}"/></td>
-        </tr>
-        <tr>
             <td>Name Author:</td>
             <td><input type="text" th:field="${blog.name}"/></td>
         </tr>

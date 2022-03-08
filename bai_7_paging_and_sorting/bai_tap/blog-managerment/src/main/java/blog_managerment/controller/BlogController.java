@@ -72,6 +72,7 @@ public class BlogController {
         return modelAndView;
     }
 
+
     @GetMapping("/delete-blog/{id}")
     public ModelAndView showDeleteForm(@PathVariable int id, Model model) {
         List<Category> categories = categoryService.findAll();
@@ -91,8 +92,9 @@ public class BlogController {
     @PostMapping("/delete-blog")
     public String deleteBlog(@ModelAttribute("blog") Blog blog) {
         blogService.deleteBlog(blog.getId());
-        return "blog/list";
+        return "redirect:/blog";
     }
+
 
     @GetMapping("/view-blog/{id}")
     public String view(@PathVariable int id, Model model) {
@@ -101,10 +103,10 @@ public class BlogController {
     }
 
     @GetMapping("/search-blog")
-    public String searchByContent(@RequestParam("searchContent") String content,Pageable pageable, Model model) {
+    public String searchByContent(@RequestParam("searchContent") String content, Pageable pageable, Model model) {
         List<Category> categories = categoryService.findAll();
         model.addAttribute("categories", categories);
-        Page<Blog> blogs = blogService.findByContent(content,pageable);
+        Page<Blog> blogs = blogService.findByContent(content, pageable);
         model.addAttribute("blogs", blogs);
         return "blog/list";
 

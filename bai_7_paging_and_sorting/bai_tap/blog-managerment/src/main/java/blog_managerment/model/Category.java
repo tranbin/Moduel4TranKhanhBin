@@ -1,6 +1,7 @@
 package blog_managerment.model;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -11,7 +12,7 @@ public class Category {
     private String name;
 
     @OneToMany(mappedBy = "category")
-    private Set<Blog> blogs ;
+    private List<Blog> blogs ;
 
     public Category() {
     }
@@ -32,11 +33,11 @@ public class Category {
         this.name = name;
     }
 
-    public Set<Blog> getBlogs() {
+    public List<Blog> getBlogs() {
         return blogs;
     }
 
-    public void setBlogs(Set<Blog> blogs) {
+    public void setBlogs(List<Blog> blogs) {
         this.blogs = blogs;
     }
 }

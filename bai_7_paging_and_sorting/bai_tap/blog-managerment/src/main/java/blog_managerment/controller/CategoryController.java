@@ -6,6 +6,7 @@ import blog_managerment.service.impl.BlogServiceImpl;
 import blog_managerment.service.impl.CategoryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.PushBuilder;
 import java.util.List;
 
 @Controller
@@ -27,7 +29,7 @@ public class CategoryController {
     private BlogServiceImpl blogService;
 
     @GetMapping("/category")
-    public ModelAndView getPageHome(@PageableDefault(size = 3)Pageable pageable) {
+    public ModelAndView getPageHome(@PageableDefault(size = 3) Pageable pageable) {
         return new ModelAndView("category/index", "categorys", categoryService.findAll(pageable));
     }
 
@@ -46,8 +48,8 @@ public class CategoryController {
     }
 
     @GetMapping("/view-category/{id}")
-    public String view(@PathVariable int id, Model model) {
-        List<Blog> blogList = blogService.findAllBlogById(id);
+    public String view(@PageableDefault(size = 3) Pageable pageable, @PathVariable int id, Model model) {
+        Page<Blog> blogList = blogService.findAllBlogById(id, pageable);
         model.addAttribute("blogs", blogList);
         model.addAttribute("id", id);
         return "blog/list";
@@ -67,10 +69,35 @@ public class CategoryController {
             return modelAndView;
         }
     }
+
     @PostMapping("/delete-category")
-    public String deleteCategory(@ModelAttribute("category") Category category){
+    public String deleteCategory(@ModelAttribute("category") Category category) {
         categoryService.deleteCategory(category.getId());
-        return "category/index";
+        return "redirect:/category";
+    }
+
+    @GetMapping("/edit-category/{id}")
+    public ModelAndView showEditForm(@PathVariable int id, Model model) {
+        List<Blog> blogList = blogService.findAllBlogById(id);
+        model.addAttribute("blogs", blogList);
+        Category category = categoryService.findCategoryById(id);
+        if (category != null) {
+            ModelAndView modelAndView = new ModelAndView("category/edit");
+            modelAndView.addObject("category", category);
+            return modelAndView;
+        } else {
+            ModelAndView modelAndView = new ModelAndView("/error.404");
+            return modelAndView;
+        }
+    }
+
+    @PostMapping("/edit-category")
+    public ModelAndView updateCategory(@ModelAttribute("category") Category category) {
+        categoryService.saveCategory(category);
+        ModelAndView modelAndView = new ModelAndView("category/edit");
+        modelAndView.addObject("category", category);
+        modelAndView.addObject("message", "Update category successfully");
+        return modelAndView;
     }
 
 }
