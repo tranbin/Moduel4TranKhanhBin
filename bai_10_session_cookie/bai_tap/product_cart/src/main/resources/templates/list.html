@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<table class="table table-success table-striped">
+    <tr>
+        <th>No.</th>
+        <th>Id</th>
+        <th>Name Product</th>
+        <th>Price Product</th>
+        <th>Description Product</th>
+        <th>Image Product</th>
+        <th>Date Create</th>
+        <th>View</th>
+    </tr>
+    <tr th:each="product,iterStart :${productList}">
+        <td th:text="${iterStart.count}"></td>
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.description}"></td>
+        <td>
+            <img th:src="${product.getGrand()}" alt="">
+        </td>
+        <td th:text="${product.dateCreate}"></td>
+
+        <td><a th:href="@{/add-product/__${product.id}__ }" class="btn btn-primary">Add Product</a></td>
+    </tr>
+</table>
+<a href="/cartShop">Back to list</a>
+</body>
+</html>
