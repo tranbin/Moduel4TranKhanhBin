@@ -6,6 +6,7 @@ import com.example.blog_management.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -31,5 +32,10 @@ public class BlogService implements IBlogService {
     @Override
     public void remove(int id) {
         blogRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Blog> findAllById(int id) {
+        return blogRepository.findAllBlogById(id);
     }
 }

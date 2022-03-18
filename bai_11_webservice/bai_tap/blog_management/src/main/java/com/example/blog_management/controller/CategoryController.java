@@ -26,7 +26,6 @@ public class CategoryController {
     @GetMapping(value = "/list")
     public ResponseEntity<Iterable<Category>> findAll() {
         List<Category> categories = (List<Category>) categoryService.findAll();
-        List<Blog> blog = (List<Blog>) blogService.findAll();
         if (categories.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
@@ -43,8 +42,9 @@ public class CategoryController {
         return new ResponseEntity<>(categories.get(), HttpStatus.OK);
     }
 
+
     @PostMapping()
-    public ResponseEntity<?> saveCategory(@RequestBody Category category) {
+    public ResponseEntity<Category> saveCategory(@RequestBody Category category) {
         categoryService.save(category);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }

@@ -36,4 +36,5 @@ public class CategoryService implements ICategoryService {
     public void remove(int id) {
         categoryRepository.deleteById(id);
     }
+
 }

@@ -37,7 +37,7 @@ public class Blog {
     }
 
     @ManyToOne
-    @JoinColumn(name = "category_id", nullable = false)
+    @JoinColumn(name = "category_id")
     private Category category;
 
     public Blog() {
