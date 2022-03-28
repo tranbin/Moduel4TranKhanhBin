@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:replace="/layout :: nav">
+</nav>
+<table class="table table-success table-striped">
+    <tr>
+        <th>No.</th>
+        <th>Id</th>
+        <th>Name Customer</th>
+        <th>Birthday Customer</th>
+        <th>Gender</th>
+        <th>Id Card</th>
+        <th>Phone Customer</th>
+        <th>Email Customer</th>
+        <th>Address Customer</th>
+        <th>Type Customer</th>
+    </tr>
+    <tr th:each="customer,iterStart: ${customerList}">
+        <td th:text="${iterStart.count}"></td>
+        <td th:text="${customer.customer_id}"></td>
+        <td th:text="${customer.customer_name}"></td>
+        <td th:text="${customer.customer_birthday}"></td>
+        <td th:text="${customer.customer_gender}"></td>
+        <td th:text="${customer.customer_id_card}"></td>
+        <td th:text="${customer.customer_phone}"></td>
+        <td th:text="${customer.customer_email}"></td>
+        <td th:text="${customer.customer_address}"></td>
+        <td th:text="${customer.customerType.customer_type_name}"></td>
+        <td><a th:href="">Edit</a></td>
+        <td><a th:href="">Delete</a></td>
+        <td><a th:href="">View</a></td>
+    </tr>
+</table>
+</body>
+</html>
