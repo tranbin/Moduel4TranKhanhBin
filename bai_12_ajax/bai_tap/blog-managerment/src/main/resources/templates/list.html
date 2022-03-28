@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function addNewBlog() {
+            // lay du lieu
+            let nameBlog = $("#nameBlog").val();
+            let content = $("#content").val();
+            let date = $("#date").val();
+            let category = $("#categoryId").val();
+            let newBlogOnJson = {
+                nameBlog: nameBlog,
+                content: content,
+                date:date,
+                category: category
+            };
+            console.log(newBlogOnJson)
+            // goi ajax
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                data: JSON.stringify(newBlogOnJson),
+                url: "/blog",
+                success: successHandler
+            });
+            //chặn sự kiện mặc định của thẻ
+            event.preventDefault();
+        }
+        function getBlog(blog) {
+            return `<tr><td>${blog.id}</td><td>${blog.nameBlog}</td><td>${blog.content}</td><td>${blog.date}</td><td>${blog.category.name}</td></tr>`;
+
+        }
+        function successHandler() {
+            $.ajax({
+                type: "GET",
+                //ten API
+                url: "/blog",
+                //xử lý khi thành công
+                success: function (data) {
+                    let content = '<tr>\n' +
+                        '<td>ID</td>\n' +
+                        '<td>Blog Name</td>\n' +
+                        '<td>Content</td>\n' +
+                        '<td>Date</td>\n' +
+                        '<td>Category</td>\n' +
+                        '</tr>';
+                    for (let i=0;i<data.length;i++) {
+                        content += getBlog(data[i]);
+                    }
+                    document.getElementById('blogList').innerHTML = content;
+                }
+            });
+        }
+
+
+        function searchNameBlog() {
+            // lay du lieu
+            let nameBlog =$('#searchByName').val();
+            /*let searchBlog = {
+                nameBlog: nameBlog,
+            };*/
+            console.log(nameBlog)
+            $.ajax({
+                /*headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },*/
+                type: "GET",
+                // data: {textS:nameBlog},
+                url: '/blog/search?name='+nameBlog,
+                success: function (data) {
+                    let content = '<tr>\n' +
+                        '<td>ID</td>\n' +
+                        '<td>Blog Name</td>\n' +
+                        '<td>Content</td>\n' +
+                        '<td>Date</td>\n' +
+                        '<td>Category</td>\n' +
+                        '</tr>';
+                    for (let i=0;i<data.length;i++) {
+                        content += getBlogSearch(data[i]);
+                        /*content +=
+                            '<tr>'+
+                                '<td>'+data[i].id+'</td>' +
+                                '<td>'+data[i].nameBlog+'</td>' +
+                                '<td>'+data[i].content+'</td>' +
+                                '<td>'+data[i].date+'</td>' +
+                                '<td>'+data[i].category+'</td>' +
+                            '</tr>'*/
+                    }
+                    document.getElementById('blogList').innerHTML = content;
+                }
+            })
+            event.preventDefault();
+        }
+        function getBlogSearch(blog) {
+            return `<tr><td>${blog.id}</td><td>${blog.nameBlog}</td><td>${blog.content}</td><td>${blog.date}</td><td>${blog.category.id}</td></tr>`;
+
+        }
+    </script>
+
+</head>
+<body>
+<form th:object="${blog}">
+    <table>
+        <tr>
+            <td>Name Blog</td>
+            <td><input type="text" id="nameBlog" placeholder="Name Blog"></td>
+        </tr>
+        <tr>
+            <td>Content</td>
+            <td><input type="text" id="content" placeholder="Content"></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td><input type="date" id="date" placeholder="Date"></td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td>
+                <select th:field="*{category}" id="categoryId">
+                    <option  th:each="category:${categorys}" th:text="${category.name}" th:value="${category.id}"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Create" onclick="addNewBlog()"></td>
+        </tr>
+    </table>
+</form>
+
+<form>
+    <P>Search By Name Blog:</P>
+    <input type="text" id="searchByName" placeholder="Search">
+    <input type="button" value="Search" onclick="searchNameBlog()">
+</form>
+
+<h1>Blog List</h1>
+<table id="blogList" border="1px">
+    <tr>
+        <td>ID</td>
+        <td>Blog Name</td>
+        <td>Content</td>
+        <td>Date</td>
+        <td>Category</td>
+    </tr>
+    <tr th:each="blog:${blogs}">
+        <td th:text="${blog.id}"></td>
+        <td th:text="${blog.nameBlog}"></td>
+        <td th:text="${blog.content}"></td>
+        <td th:text="${blog.date}"></td>
+        <td th:text="${blog.category.name}"></td>
+    </tr>
+</table>
+</body>
+</html>
